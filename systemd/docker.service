@@ -23,7 +23,7 @@ ExecStart=/usr/bin/dockerd \
           $DOCKER_OPT_MTU \
           -s=overlay \
           --log-driver=json-file \
-          --insecure-registry=sz-pg-oam-docker-hub-001.tendcloud.com
+          --insecure-registry=reg.ovwane.com
 ExecReload=/bin/kill -s HUP $MAINPID
 LimitNOFILE=1048576
 LimitNPROC=1048576
